@@ -6,9 +6,9 @@ import { useState } from 'react';
 
 function TextForm() {
     let [text , setText] = useState('Leave a comment here');
+    let [color , setColor] = useState('red');
     const upper = () => {
         setText(text.toUpperCase());
-        setText()
     }
     const lower = () => {
         setText(text.toLowerCase());
@@ -19,14 +19,14 @@ function TextForm() {
     const Del = () => {
        setText(text.slice(0 , -1))
     }
-    const handleValue = (event) => {
-        console.log(event.target);
-        setText(event.target.value)
-    }
+   const handleValue = (event) => {
+       console.log(event.target);
+       setText(event.target.value)
+   }
   return (
     <>
       <FloatingLabel controlId="floatingTextarea2" label="Comments">
-        <Form.Control as="textarea"  placeholder="Leave a comment here" style={{ height: '100px' }}
+        <Form.Control as="textarea"  placeholder="Leave a comment here" style={{ height: '100px' , color : {color} }}
         value={text} onChange={handleValue} />
       </FloatingLabel>
       <div className="container m-3">
