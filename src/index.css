@@ -38,22 +38,54 @@
 h1{
     font-weight: bold;
     cursor: pointer;
+    transition: all;
 }
-h1::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 20%;
-    height: 3px;
-    background: #000;
-    transition: transform 0.2s ease-in-out;
-    transform: scale(0);
-    cursor: pointer;
+
+.count-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-h1:hover::after{
-    transform: scale(1);
-    cursor: pointer;
-    width: 20%;
+.count-down .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.count-down .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.count-down .count-show{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.count-down .input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.count-down .button1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 

@@ -1,31 +1,35 @@
 import React , {useState , useEffect} from "react";
-import Hooks from "./Hooks";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import TextForm from "./TextForm";
+import UseEffect from "./UseEffect";
+import Todo from "./Todo";
+import Count from "./Count";
+
 
 function App() {
   let [news, setNews] = useState([]);
-
+  
   useEffect(() => {
-    fetch('https://dummyjson.com/products')
-      .then(function (res) {
-        return res.json();
-      })
-      .then(function (data) {
-        setNews(data.products);
-        console.log(data);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
+  fetch('https://dummyjson.com/products')
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      setNews(data.products);
+      console.log(data);
+    })
+    .catch((e) => {
+      console.log(e);
+    });
   }, []);
-
+  
   return (
     <>
-      <div className="container my-5">
-    <h1>React-Class-04</h1>
-      <Hooks/>
+    <h1 className="fw-bold text-center">React-Class-04</h1>
+    <Todo/>
+    <Count/>
+      <div className="container my-2">
       <TextForm/>
       </div>
     <div className="App">
