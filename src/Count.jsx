@@ -60,7 +60,7 @@ const Count = () => {
     let divide = input1 / input2;
     console.log(divide);
     if(input1 != '' || input2 != ''){
-      setCount1('Divide : ' + divide)
+      setCount1('Divide : ' + Math.ceil(divide))
     }
     else{
       alert('Please Fill The Input!')
@@ -70,7 +70,7 @@ const Count = () => {
 
   return (
     <div className='container count-down'>
-      <div className="heading-count-button">
+      <div className="heading-count-button shadow p-4">
         <div className="heading">
           <h2 className='fw-bold p-2'>Increament</h2>
           <h2 className='fw-bold p-2'>Decreament</h2>
@@ -85,7 +85,7 @@ const Count = () => {
           <Button variant="outline-success" onClick={Reset}>Reset</Button>
         </div>
       </div>
-      <div className="input-button">
+      <div className="input-button shadow p-4">
         <div className="input">
           <div className="input-group m-4">
             <input type="text" className="form-control m-2" id='input1' placeholder="Number" aria-label="Username" aria-describedby="basic-addon1" />

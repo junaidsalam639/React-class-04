@@ -25,6 +25,7 @@ function TextForm() {
    }
   return (
     <>
+    <h2 className='fw-bold'>Text:Type</h2>
       <FloatingLabel controlId="floatingTextarea2" label="Comments">
         <Form.Control as="textarea"  placeholder="Leave a comment here" style={{ height: '100px' , color : {color} }}
         value={text} onChange={handleValue} />
