@@ -60,7 +60,7 @@ const Count = () => {
     let divide = input1 / input2;
     console.log(divide);
     if(input1 != '' || input2 != ''){
-      setCount1('Divide : ' + Math.ceil(divide))
+      setCount1('Divide : ' + divide)
     }
     else{
       alert('Please Fill The Input!')
