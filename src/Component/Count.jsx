@@ -82,9 +82,9 @@ const Count = () => {
           <h1 className='fw-bold p-2'>{count}</h1>
         </div>
         <div className="button">
-        <Button variant="outline-primary" onClick={Increament}>Increament</Button>
-          <Button variant="outline-info" onClick={Decreament}>Decreament</Button>
-          <Button variant="outline-success" onClick={Reset}>Reset</Button>
+        <Button variant="outline-primary" className='m-1' onClick={Increament}>Increament</Button>
+          <Button variant="outline-info" className='m-1' onClick={Decreament}>Decreament</Button>
+          <Button variant="outline-success" className='m-1' onClick={Reset}>Reset</Button>
         </div>
       </div>
       <div className="input-button shadow p-4">
@@ -95,10 +95,10 @@ const Count = () => {
           </div>
         </div>
         <div className="button1">
-          <Button variant="outline-primary" onClick={Addition}>Additon</Button>
-          <Button variant="outline-info" onClick={Subtraction}>Subtraction</Button>
-          <Button variant="outline-success" onClick={Multiply}>Multiply</Button>
-          <Button variant="outline-warning" onClick={Divide}>Divide</Button>
+          <Button variant="outline-primary" className='m-1' onClick={Addition}>Additon</Button>
+          <Button variant="outline-info" className='m-1' onClick={Subtraction}>Subtraction</Button>
+          <Button variant="outline-success" className='m-1' onClick={Multiply}>Multiply</Button>
+          <Button variant="outline-warning" className='m-1' onClick={Divide}>Divide</Button>
         </div>
         <div className="value-show text-center m-3">
           <h4 className='fw-bold'>This value is {count1}</h4>

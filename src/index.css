@@ -140,6 +140,9 @@ h1{
 .weather .weather-data h3{
     color: #fff;
 }
+button:hover{
+    mix-blend-mode: difference;
+}
 
 /* weather end */
 

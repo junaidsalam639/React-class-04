@@ -30,11 +30,11 @@ function TextForm() {
         <Form.Control as="textarea"  placeholder="Leave a comment here" style={{ height: '100px' , color : {color} }}
         value={text} onChange={handleValue} />
       </FloatingLabel>
-      <div className="container m-3">
-      <Button variant="info" style={{marginLeft : '8px' , width : '110px'}} onClick={upper}>UpperCase</Button>
-      <Button variant="warning" style={{marginLeft : '8px' , width : '110px'}} onClick={lower}>LowerCase</Button>
-      <Button variant="primary" style={{marginLeft : '8px' , width : '110px'}} onClick={Del}>Del</Button>
-      <Button variant="danger" style={{marginLeft : '8px' , width : '110px'}} onClick={clear}>Clear</Button>
+      <div className="container mt-3 text-center">
+      <Button variant="info" style={{margin : '5px' , width : '110px'}} onClick={upper}>UpperCase</Button>
+      <Button variant="warning" style={{margin : '5px' , width : '110px'}} onClick={lower}>LowerCase</Button>
+      <Button variant="primary" style={{margin : '5px' , width : '110px'}} onClick={Del}>Del</Button>
+      <Button variant="danger" style={{margin : '5px' , width : '110px'}} onClick={clear}>Clear</Button>
       </div>
     </>
   );

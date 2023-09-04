@@ -11,8 +11,8 @@ function TodoApp() {
   };
 
   const handleAddTodo = () => {
-    if (value !== '') {
-      if (editIndex !== -1) {
+    if (value != '') {
+      if (editIndex != -1) {
         const updatedTodos = [...todos];
         console.log(updatedTodos);
         updatedTodos[editIndex] = value;
@@ -21,6 +21,7 @@ function TodoApp() {
         setEditIndex(-1);
       } else {
         setTodos([...todos, value]);
+        console.log(value);
       }
       setValue('');
     } else {
