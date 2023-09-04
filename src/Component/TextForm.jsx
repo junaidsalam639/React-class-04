@@ -33,8 +33,8 @@ function TextForm() {
       <div className="container m-3">
       <Button variant="info" style={{marginLeft : '8px' , width : '110px'}} onClick={upper}>UpperCase</Button>
       <Button variant="warning" style={{marginLeft : '8px' , width : '110px'}} onClick={lower}>LowerCase</Button>
-      <Button variant="danger" style={{marginLeft : '8px' , width : '110px'}} onClick={clear}>Clear</Button>
       <Button variant="primary" style={{marginLeft : '8px' , width : '110px'}} onClick={Del}>Del</Button>
+      <Button variant="danger" style={{marginLeft : '8px' , width : '110px'}} onClick={clear}>Clear</Button>
       </div>
     </>
   );

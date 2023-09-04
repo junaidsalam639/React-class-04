@@ -1,11 +1,11 @@
 import React , {useState , useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import TextForm from "./TextForm";
-import UseEffect from "./UseEffect";
-import Todo from "./Todo";
-import Count from "./Count";
-
+import TextForm from "./Component/TextForm";
+import UseEffect from "./Component/UseEffect";
+import Todo from "./Component/Todo";
+import Count from "./Component/Count";
+import  Navbar  from "./Component/Navbar";
 
 function App() {
   let [news, setNews] = useState([]);
@@ -26,7 +26,8 @@ function App() {
   
   return (
     <>
-    <h1 className="fw-bold text-center">React-Class-04</h1>
+    <Navbar/>
+    <h1 className="fw-bold text-center my-4">React-Class-04</h1>
     <Todo/>
     <Count/>
       <div className="container my-2">
