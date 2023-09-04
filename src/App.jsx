@@ -31,7 +31,9 @@ function App() {
     <Navbar/>
     </div>
     <h1 className="fw-bold text-center my-4">React-Class-04</h1>
+    <h1 className="text-center fw-bold">Weather App</h1>
     <Weather/>
+    <h1 className="text-center fw-bold">Todo App</h1>
     <Todo/>
     <Count/>
       <div className="container my-2">
