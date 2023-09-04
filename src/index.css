@@ -87,7 +87,7 @@ h1{
     width: 100%;
     flex-wrap: wrap;
 }
-
+/* todo start */
 .todo{
     display: flex;
     flex-direction: column;
@@ -105,7 +105,43 @@ h1{
     flex-wrap: wrap;
     width: 80%;
 }
+/* todo end */
+.input-group .form-control:focus{
+    box-shadow: none;
+}
 
+/* weather start */
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.weather .weather-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.weather .weather-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    background-color: #4834d4;
+    border-radius: 6px;
+}
+.weather .weather-data h3{
+    color: #fff;
+}
+
+/* weather end */
 
 
 /* navbar start */

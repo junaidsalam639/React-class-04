@@ -6,6 +6,7 @@ import UseEffect from "./Component/UseEffect";
 import Todo from "./Component/Todo";
 import Count from "./Component/Count";
 import  Navbar  from "./Component/Navbar";
+import Weather from "./Component/Weather";
 
 function App() {
   let [news, setNews] = useState([]);
@@ -26,8 +27,11 @@ function App() {
   
   return (
     <>
+    <div className="sticky-top">
     <Navbar/>
+    </div>
     <h1 className="fw-bold text-center my-4">React-Class-04</h1>
+    <Weather/>
     <Todo/>
     <Count/>
       <div className="container my-2">

@@ -18,8 +18,8 @@ const Count = () => {
 
   // DMAS FUNCTION START
   const Addition = () => {
-    let input1 = Number(document.getElementById('input1').value);
-    let input2 = Number(document.getElementById('input2').value);
+    let input1 = Number(document.getElementById('input11').value);
+    let input2 = Number(document.getElementById('input22').value);
     let addition = input1 + input2;
     console.log(addition);
     if(input1 != '' || input2 != ''){
@@ -31,8 +31,8 @@ const Count = () => {
   }
   
   const Subtraction = () => {
-    let input1 = Number(document.getElementById('input1').value);
-    let input2 = Number(document.getElementById('input2').value);
+    let input1 = Number(document.getElementById('input11').value);
+    let input2 = Number(document.getElementById('input22').value);
     let subtraction = input1 - input2;
     console.log(subtraction);
     if(input1 != '' || input2 != ''){
@@ -43,8 +43,10 @@ const Count = () => {
     }
   }
   const Multiply = () => {
-    let input1 = Number(document.getElementById('input1').value);
-    let input2 = Number(document.getElementById('input2').value);
+    let input1 = Number(document.getElementById('input11').value);
+    let input2 = Number(document.getElementById('input22').value);
+    console.log(input1);
+    console.log(input2);
     let multiply = input1 * input2;
     console.log(multiply);
     if(input1 != '' || input2 != ''){
@@ -55,8 +57,8 @@ const Count = () => {
     }
   }
   const Divide = () => {
-    let input1 = Number(document.getElementById('input1').value);
-    let input2 = Number(document.getElementById('input2').value);
+    let input1 = Number(document.getElementById('input11').value);
+    let input2 = Number(document.getElementById('input22').value);
     let divide = input1 / input2;
     console.log(divide);
     if(input1 != '' || input2 != ''){
@@ -88,8 +90,8 @@ const Count = () => {
       <div className="input-button shadow p-4">
         <div className="input">
           <div className="input-group m-4">
-            <input type="text" className="form-control m-2" id='input1' placeholder="Number" aria-label="Username" aria-describedby="basic-addon1" />
-            <input type="text" className="form-control m-2" id='input2' placeholder="Number" aria-label="Username" aria-describedby="basic-addon1" />
+            <input type="text" className="form-control m-2" id='input11' placeholder="Number" aria-label="Username" aria-describedby="basic-addon1" />
+            <input type="text" className="form-control m-2" id='input22' placeholder="Number" aria-label="Username" aria-describedby="basic-addon1" />
           </div>
         </div>
         <div className="button1">
