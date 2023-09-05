@@ -7,6 +7,7 @@ import Todo from "./Component/Todo";
 import Count from "./Component/Count";
 import  Navbar  from "./Component/Navbar";
 import Weather from "./Component/Weather";
+import { Link } from "react-router-dom";
 
 function App() {
   let [news, setNews] = useState([]);
@@ -30,10 +31,10 @@ function App() {
     <div className="sticky-top">
     <Navbar/>
     </div>
-    <h1 className="fw-bold text-center my-4">React-Class-04</h1>
-    <h1 className="text-center fw-bold">Weather App</h1>
+    <h1 className="fw-bold text-center my-4">React_Class_04</h1>
+    <h1 className="text-center fw-bold">Weather_App</h1>
     <Weather/>
-    <h1 className="text-center fw-bold">Todo App</h1>
+    <h1 className="text-center fw-bold">Todo_App</h1>
     <Todo/>
     <Count/>
       <div className="container my-2">
